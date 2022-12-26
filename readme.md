@@ -17,10 +17,10 @@ I have structured this project as follows:
 ## Assumptions
 
 **In order to get unpaid jobs:**
-I am considering that only jobs for valid (in_progress) contracts are valid;
+I am considering that only jobs for valid (`in_progress`) contracts are valid;
 
 **In order to get jobs sum:**
-I am considering that only jobs for valid (in_progress) contracts are valid;
+I am considering that only jobs for valid (`in_progress`) contracts are valid;
 
 ## Unit tests
 

@@ -57,10 +57,9 @@ async function getBestProfession(start, end) {
 async function getBestClients(start, end, limit) {
   return Job.findAll({
     attributes: [
-      [sequelize.literal('Contract.ClientId'), 'ClientId'],
-      [sequelize.literal('firstName'), 'firstName'],
-      [sequelize.literal('lastName'), 'lastName'],
-      [sequelize.fn('sum', sequelize.col('price')), 'total']
+      [sequelize.literal('Contract.ClientId'), 'id'],
+      [sequelize.literal('firstName || " " || lastName'), 'fullName'],
+      [sequelize.fn('sum', sequelize.col('price')), 'paid']
     ],
     include: [
       {
@@ -85,7 +84,7 @@ async function getBestClients(start, end, limit) {
       },
     },
     group: ['Contract.ClientId'],
-    order: [[sequelize.col('total'), 'DESC']],
+    order: [[sequelize.col('paid'), 'DESC']],
     limit,
     subQuery: false,
   });
