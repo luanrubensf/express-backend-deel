@@ -52,7 +52,7 @@ async function getBestProfession(start, end) {
  * @param start start date to filter the paymentDate
  * @param end end date to filter the paymentDate
  * @param limit limit to be applied to the list
- * @returns {Promise<Job[]>} A list containing `limit` results with { ClientId, firstName, lastName, total }
+ * @returns {Promise<Job[]>} A list containing `limit` results with { id, fullName, paid }
  */
 async function getBestClients(start, end, limit) {
   return Job.findAll({
