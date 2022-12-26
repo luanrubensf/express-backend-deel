@@ -45,6 +45,10 @@ For example, we could have the following structure:
 Each route can point to a different controller handler and have a different path. To make things simple here, I decided to not implement this versioning.
 
 
+## Postman
+
+A Postman collection to interact with the API can be found [here](./docs/Deel.postman_collection.json).
+
 ## Improvements
 
 I have mapped some improvements that can be done to this project:

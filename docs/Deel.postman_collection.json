@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "a3a50f4f-c79f-4c51-9a1e-6d8eb88492f9",
+		"name": "Deel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6549829"
+	},
+	"item": [
+		{
+			"name": "contacts/:id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "profile_id",
+						"value": "4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/contracts/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"contracts",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contacts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "profile_id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/contracts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"contracts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/unpaid",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "profile_id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/contracts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"contracts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobs/:id/pay",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "profile_id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/jobs/2/pay",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"jobs",
+						"2",
+						"pay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "balances/deposit/:userId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "profile_id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/balances/deposit/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"balances",
+						"deposit",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/admin/best-profession",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "profile_id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/admin/best-profession?start=2020-01-01&end=2022-12-31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"admin",
+						"best-profession"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "end",
+							"value": "2022-12-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/admin/best-clients",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "profile_id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/admin/best-profession?start=2020-01-01&end=2022-12-31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"admin",
+						"best-profession"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "end",
+							"value": "2022-12-31"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
