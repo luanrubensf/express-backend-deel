@@ -1,5 +1,5 @@
 const { getBestProfession, getBestClients } = require('../repository/admin.repository');
-
+const { isValidDate } = require('../utils/date.utils');
 /**
  * Validate the input dates and computes the best profession. Return only one pair of {profession, total}
  * @param start start date to filter the paymentDate
@@ -28,12 +28,11 @@ async function calculateBestClients(start, end, limit) {
 
 /**
  * Validate the start and end date.
- * Here we need to add more validations, for example, check format, if the date itself is valid and so on.
  * @param start start date
  * @param end end date
  */
 function validateDates(start, end) {
-  if (!start || !end) {
+  if (!start || !end || !isValidDate(start) || !isValidDate(end)) {
     throw new Error('You must provide the start and end date');
   }
 }
