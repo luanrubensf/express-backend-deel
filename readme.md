@@ -36,6 +36,13 @@ To run the tests, just use the command:
 npm run test
 ```
 
+## Tech stack
+
+- Node 16.16.0+ 
+- Express 4.17.1
+- Sequelize 6.3.4
+- Jest 29.3.1
+
 ## API versioning
 
 This API could be versioned using different levels on the `routes` folder.
